@@ -1,5 +1,8 @@
 # tilelive-tmsource
 
+> **AerisWeather Note:**
+> We have published these latest changes under @aerisweather/tilelive-tmsource for tagged versions
+
 I am a [tilelive](https://github.com/mapbox/tilelive.js) provider for
 [tm2](https://github.com/mapbox/tm2) sources.
 

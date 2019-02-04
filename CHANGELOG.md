@@ -1,5 +1,11 @@
 # Changes
 
+## v0.8.3 (AerisWeather)
+
+* Removed mapnik peering dependency. Allow our dependencies to deal with that for us.
+* Removed package-lock so we don't get duplicate library issues.
+* Updated tilelive-bridge, moved under @aerisweather namespace so we can use latest mapnik
+
 ## v0.8.2 - 7/12/18
 
 * Delegate `getInfo()` to `tilelive-bridge` to prevent data leakage
