@@ -1,5 +1,8 @@
 # Changes
 
+## v0.8.4
+(Publish issues, same as v0.8.3)
+
 ## v0.8.3 (AerisWeather)
 
 * Removed mapnik peering dependency. Allow our dependencies to deal with that for us.
