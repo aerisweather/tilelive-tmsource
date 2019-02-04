@@ -17,8 +17,5 @@
     "carto": "^1.0.1",
     "underscore": "^1.7.0",
     "mapnik-reference": "^8.7.0"
-  },
-  "peerDependencies": {
-    "mapnik": "^3.5.0"
   }
 }
