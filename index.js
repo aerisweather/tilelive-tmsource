@@ -6,12 +6,21 @@ var fs = require("fs"),
     util = require("util");
 
 var _ = require("underscore"),
-    Bridge = require("@mapbox/tilelive-bridge"),
+    Bridge = require("@aerisweather/tilelive-bridge"),
     carto = require("carto"),
     mapnik = require("mapnik"),
-    mapnikref = require('mapnik-reference').load(mapnik.versions.mapnik),
+    mapnikRefAll = require('mapnik-reference'),
     yaml = require("js-yaml");
 
+let mapnikref;
+try {
+  mapnikref = mapnikRefAll.load(mapnik.versions.mapnik);
+}
+catch (err) {
+  // Mapnik v3.1 defs not ready yet: https://github.com/mapnik/mapnik-reference/issues/143
+  // Default to our latest known. This seems to be just saving us from an old bug.
+  mapnikref = mapnikRefAll.load("3.0.22")
+}
 var tm = {};
 
 // Named projections.

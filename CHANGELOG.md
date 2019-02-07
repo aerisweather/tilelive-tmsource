@@ -1,5 +1,10 @@
 # Changes
 
+## v0.8.5
+
+* Fix - Issues with including the wrong lib at runtime
+* Fix - Default to mapnik reference 3.0.22 since 3.1 isn't published yet for node-mapnik v4.2.1
+
 ## v0.8.4
 (Publish issues, same as v0.8.3)
 
