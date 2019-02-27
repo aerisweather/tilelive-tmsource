@@ -1,11 +1,16 @@
 # Changes
 
-## v0.8.5
+## v0.8.6 (AerisWeather)
+
+* Fix - Replaced bad GeoJSON with and "empty" (really contains 1 element) GeoJSON so mapnik doesn't blow up.
+     See: https://github.com/mapnik/node-mapnik/issues/913
+
+## v0.8.5 (AerisWeather)
 
 * Fix - Issues with including the wrong lib at runtime
 * Fix - Default to mapnik reference 3.0.22 since 3.1 isn't published yet for node-mapnik v4.2.1
 
-## v0.8.4
+## v0.8.4 (AerisWeather)
 (Publish issues, same as v0.8.3)
 
 ## v0.8.3 (AerisWeather)
